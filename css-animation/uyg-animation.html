@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: #fff;
+        }
+      
+        a{
+            text-decoration: none;
+        }
+        h1{
+            margin: 0;
+            font-size: 5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        p{
+            font-size: 24px;
+            padding: 10px 30px;
+            text-align: center;
+        }
+        #page-1{
+            background-color: blueviolet;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #page-2{
+            background-color: blue;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #page-3{
+            background-color: chocolate;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .header{
+            transform: translateY(-800px);
+            animation: header 1s forwards;
+        }
+        .text_page-1{
+            transform: translateX(-2400px);
+            animation: text_animate 1s forwards 1s;
+        }
+        @keyframes header{
+            to{
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes text_animate{
+            to{
+                transform: translateX(0);
+            }
+        }
+      
+        .btn{
+            display: inline-block;
+            background-color: aliceblue;
+            color: #333;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            padding: 10px 15px;
+            transition: all .5s;
+        }
+        .btn:hover{
+            background-color: #333;
+            color: aliceblue;
+        }
+        .btn_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn_container .btn{
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page-1">
+        <div class="header">
+            <h1>Page 1</h1>
+        </div>
+        <div class="text_page-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nostrum vitae suscipit sint inventore consequuntur rem numquam quae ipsum, sequi cumque itaque doloribus a deleniti eos voluptas. A, fugiat possimus!</p>
+        </div>
+        <a href="#page-2" class="btn">Next Page <i class="fa-solid fa-circle-down"></i></a>
+    </div>
+    <div id="page-2">
+        <h1>Page 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nostrum vitae suscipit sint inventore consequuntur rem numquam quae ipsum, sequi cumque itaque doloribus a deleniti eos voluptas. A, fugiat possimus!</p>
+        <div class="btn_container">
+            <a href="#page-3" class="btn">Next Page <i class="fa-solid fa-circle-down"></i></a>
+            <a href="#page-1" class="btn">Previous Page <i class="fa-solid fa-circle-up"></i></a>
+        </div>
+
+    </div>
+    <div id="page-3">
+        <h1>Page 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nostrum vitae suscipit sint inventore consequuntur rem numquam quae ipsum, sequi cumque itaque doloribus a deleniti eos voluptas. A, fugiat possimus!</p>
+        <a href="#page-2" class="btn">Previous Page <i class="fa-solid fa-circle-up"></i></a>
+    </div>
+</body>
+</html>

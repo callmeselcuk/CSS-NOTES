@@ -1,0 +1,358 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:wght@400;700&display=swap');
+@import url("../../Bölüm-3/button.css");
+@import url("base.css");
+
+/*main-header start*/
+.main-header{
+    background-color: #FC997C;
+    padding: 8px 16px;
+    position: sticky;
+    top:0;
+    width: 100%;
+    z-index: 1;
+}
+.main-nav{
+    display: inline-block;
+    width: calc(100% - 119px);
+    text-align: right;
+}
+.main-nav__items{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.main-nav__item{
+    list-style: none;
+    display: inline-block;
+}
+#main-header__logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    border-bottom: 2px solid #2E4C6D;
+    font-weight: 700;
+}
+#main-header__logo span{
+    color: #2E4C6D;
+    font-style: italic;
+}
+.main-nav__item--login a::before{
+    content: none;
+}
+
+/*main-header end*/
+
+
+/* showcase start */
+#showcase { 
+    background-position: center;
+    height: 40vh;
+    color: #fff;
+    position: relative;
+    background-image: 
+    linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
+    url(../../Bölüm-2/sinema3.jpg);
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#showcase .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(46, 76, 109, 0.3);
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+}
+#showcase_header{
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+#showcase_text{
+    margin-top: 20px;
+}
+@media (min-width: 576px) { 
+    #showcase{
+        height: 50vh;
+    }
+    #showcase .content {
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 768px) { 
+    #showcase {
+        height: 60vh;
+    }
+    #showcase .content {
+        font-size: 25px;
+    }
+ }
+
+@media (min-width: 992px) { 
+    #showcase {
+        height: 70vh;
+    }
+    #showcase .content {
+        font-size: 26px;
+    }
+ }
+/* showcase end */
+/*how it works start*/
+#how-it-works{
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    font-size: 32px;
+    height: 60vh;
+    background-color: #DFD3C3;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+.how-it-works__p{
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#how-it-works__main-header{
+    margin: 40px 0px;
+}
+.icon-box h3 {
+    color: #3e4555;
+    font-size: 26px;
+    margin: 8px 0;
+}
+.icon-box{
+    font-size: 24px;
+    padding: 8px;
+}
+.icon-box i {
+    color: #FC997C;
+}
+
+/*how it works end*/
+/*features start*/
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#features{
+    width: 100%;
+}
+.features__left{
+    width: 50%;
+    background:
+    linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
+    url(../../Bölüm-2/watch-movies-together-online.jpg);
+    float: left;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.features__right{
+    display: inline-block;
+    width: 50%;
+    background-color: #D1E9F6;
+    height: 350px;
+    vertical-align: top;
+    padding: 50px;
+}
+.features__right-head{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+.features__right-p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-top:8px ;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 12px;
+}
+/*features end*/
+/*plans start*/
+.section-title {
+    text-align: center;
+    margin: 40px auto;
+    color: #3e4555;
+    font-size: 30px;
+}
+
+.plan {           
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.plan__badge {
+    background: #fff;
+    color: #FC997C;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.recommended_plan {
+    color: #fff;
+    background: #396EB0!important;
+}
+
+.inner-plan {
+    background: #edf5f7;
+    padding: 25px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    transition: all .6s;
+    position: relative;
+}
+
+.inner-plan:hover {
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.5);
+    top: -5px;
+}
+
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan--featured {
+    position: relative;
+    top: -20px;
+}
+
+.plan__features li {
+    margin: 6px 0;
+}
+
+/*plans end*/
+
+/*scroll-top start*/
+.scroll-top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin: 8px;
+    color: rgba(46, 76, 109, 1);
+    transition: all .1s;
+    cursor: pointer;
+}
+.scroll-top:hover{
+    bottom: 3px;
+    opacity: 0.8;
+}
+/*scroll-top end*/
+/* stats start */
+#stats{
+    background-image: linear-gradient(0deg, rgba(195,104,34,1) 0%, rgba(253,45,45,1) 100%);
+    height: 20vh;
+    text-align: center;
+    color: #D1E9F6;
+    cursor: pointer;
+    padding: 40px;
+}
+.stats_item{
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .5s;
+
+}
+.stats_item:hover{
+    color: #2E4C6D;
+    font-size: 22px;
+}
+/* stats end */
+/*moives start*/
+#movies{
+    margin-top: 25px;
+}
+.card{
+    width: 350px;
+    border-radius: 50px;
+    transition: all .6s;
+    cursor: pointer;
+}
+.inner-card{
+    margin: 0px 15px;
+}
+.card:hover{
+    transform: translateY(-10px);    
+}
+.card:hover .card-body{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.card-img{
+    width: 100%;    
+    height: 300px;
+    background-position: center top;
+    background-size: cover;
+}
+.card-body{ 
+    padding: 25px;
+    background-color: #edf5f7;
+}
+.card-header{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.card-text{
+    margin-bottom: 10px;
+}
+
+/*moives end*/
+/*footer start*/
+.footer{
+    background-color: #396EB0;
+    height: 120px;
+    position: relative;
+    bottom: -200px;
+}
+footer ul,
+footer li{
+    display: inline-block;
+}
+footer li{
+    padding-left: 8px;
+}
+footer a{
+    color: #fff;
+    transition: all .5s;
+}
+footer a:hover{
+    color: #FC997C;
+}
+#footer_socials{
+    text-align: right;
+}
+#footer_nav{
+    font-size: 20px;
+    position: relative;
+}
+#footer_nav a {
+    position: relative;
+}
+#footer_nav a::before{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #FC997C;
+    content: "";
+    transition: .5s;
+}
+#footer_nav a:hover::before{
+    width: 100%;
+}
+#footer_container{
+    padding-top: 60px;
+}
+/*footer end*/

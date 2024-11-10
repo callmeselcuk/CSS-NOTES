@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: 200px 1fr 1fr;
+            -> 1. kolon 200px genişlik alır. alamadığı durumda altda scrollbar çıkar.
+            */
+            /* grid-template-columns: minmax(200px , 1fr) 1fr 1fr;
+            -> 1. kolon min 200 px genişlik alır. eğer genişlik artar ise 1 fr değer alır. eğer 1. kolon 200px değer alamaz ise altda scroll bar çıkar.
+            */
+            /* grid-template-columns: minmax(200px, 500px) 1fr 1fr;
+            -> 1. kolon min 200 px değer alır, altına inmez. eğer genişlik artar ise max 500 px  değer alır.
+            */
+            /* grid-template-columns: repeat(3, minmax(5));
+            */
+            /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            -> kolonlar min 200px genişlik alır. daha üstünü alabiliyorsa almaz 200px lik boşluk bırakır. Eğer yeterli kadar yer olmaz ise kolonlar bir alt satıra iner.
+            */
+            /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            -> kolonlar min 200px genişlik alır. eğer yeterli kadar yer olmaz ise bir alt satıra iner. auto-fill den farkı 200px üstü genişlik alabilir. 200px üstü genişliği ise orantısal olarak paylaşırlar.
+            */
+        }
+        .item{
+            background-color: chocolate;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
+</body>
+</html>

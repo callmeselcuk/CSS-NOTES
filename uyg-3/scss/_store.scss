@@ -1,0 +1,37 @@
+@use 'variables';
+
+
+#store{
+    &-a{
+        background-color: #DE7C7D;
+
+        .card{
+            background-color: #E4E0E1;
+            
+            del{
+                padding-right: .8rem;
+            }
+        }
+       
+    }
+    &-b{
+        .new-drops{
+            h1{
+                background-color: variables.$blue-color;
+                color: #fff;
+                padding-top: 10px;
+                border-radius: 8px;
+                margin-bottom: 1rem;
+            }
+        } 
+        .best-sellers{
+            h1{
+                background-color: variables.$green-color;
+                color: #fff; 
+                padding-top: 10px;
+                border-radius: 8px;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}   

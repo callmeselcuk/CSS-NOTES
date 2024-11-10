@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            font-size: 18px;
+            font-style: italic;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            color: crimson;
+        }
+
+        .about::first-line{
+            font-size: 18px;
+            font-style: italic;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            color:  teal;}
+        .about::first-letter{
+            font-size: 30px;
+        }
+
+        p::selection{
+            background-color: black;
+            color: aliceblue;
+        }
+        p::after{
+            content: '\265E';
+            color: chocolate;
+            font-size: 20px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, incidunt, unde nihil nulla dicta pariatur similique nostrum dolores possimus minima vitae et, non natus quasi aspernatur ducimus nisi magnam ipsam!</p>
+
+    <p class="about">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt sit eum facere magnam temporibus fuga minima provident assumenda doloribus tempora perspiciatis molestias esse vero vitae, ratione nemo dolor error!
+    </p>
+</body>
+</html>

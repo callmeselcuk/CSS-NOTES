@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: cadetblue;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: brown;
+            float: right;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="clearfix">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae explicabo optio sequi dolorem, quasi perferendis assumenda dolores earum vel voluptas voluptatibus dolore perspiciatis voluptatem illum suscipit aut error nisi magni.</p>
+</body>
+</html>

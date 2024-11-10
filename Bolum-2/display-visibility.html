@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 75px;
+            display: inline-block;
+        }
+        #first{background-color: red;}
+        #second{background-color: blue; visibility: hidden;}
+        #third{background-color: green;}
+       
+    </style>
+</head>
+<body>
+    <!--
+        visibiliy:hidden dediğimiz zaman nesne tarayıca gösterilmez lakin yer kaplamaya devam eder
+        display:none dediğimiz zaman cisim hem gösterilmez hemde yer kaplamaz.
+    -->
+    <div id="container">
+        <div class="box" id="first">first</div>
+        <div class="box" id="second">second</div>
+        <div class="box" id="third">third</div>
+    </div>
+    
+</body>
+</html>

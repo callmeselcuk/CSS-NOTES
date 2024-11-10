@@ -1,0 +1,47 @@
+@use 'variables';
+
+#contact{
+    &__form{
+        .inner_form{
+            display: grid;
+            grid-template-areas: 
+            'name sur'
+            'phone email'
+            'text-area text-area'
+            'button button';
+            gap: 1rem;
+            margin-bottom: 1rem;
+            .name{
+                grid-area: name;
+            }
+            .sur{
+                grid-area: sur;
+            }
+            .email{
+                grid-area: email;
+            } 
+            .phone{
+                grid-area: phone;
+            }
+            .text-area{
+                grid-area: text-area;
+                height: 180px;
+            }
+            .btn-light{
+                grid-area: button;
+            }
+            input:not([type=button]){
+                padding: 1rem;
+                outline: none;
+                border: 2px solid variables.$primary-color;
+            }
+            textarea{
+                padding: 1rem;
+                border: 2px solid variables.$primary-color;
+
+            }
+
+
+        }
+    }
+}

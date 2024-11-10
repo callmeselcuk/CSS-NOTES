@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Attribute selector */
+        /* a[target] {
+            background-color: red;
+            => target attribute'tuna sahip a etiketlerini seçer
+        }
+
+
+        [class] {
+            background-color: blue;
+            => class attribute'tuna sahip tüm etiketlerini seçer
+        } */
+
+        /* Attribute value selector */
+
+        /* a[class="active"] {
+            background-color: blue;
+            => classı active olan a etiketlerini seçer
+        }  */
+        
+        /* Attribute '*' selector  */
+        /* [class*="active"] {
+            background-color: blue;
+            => içerisinde active kelimesini geçiren classları etkiler. bütün kelime olması şart değil a da yazarsak içerisinde a harfini geçiren classları etkiler 
+        } */
+
+        /* Attribute '~' selector  */
+        /* [class~="active"] {
+            background-color: blue;
+            => içerisinde active (kelimenin tamamaını içermesi lazım) kelimesi olan classları etkiler
+        } */
+
+
+        /* Attribute '|' selector */
+
+        /* [class|="active"] {
+            background-color: blue;
+            => class ismi active olan etiektleri etikler. Ama mesela activetop isimli bir classı etkilemez. Classın active-top şeklinde olması gerekirdi
+        } */
+
+        /* Attribute '^' selector  */
+        /* [class^="active"] {
+            background-color: blue;
+            => class ismi active ile başlayan etiketleri etkiler. Ayrılamsına falan gerek yok activeM falan isimli classları da etklier
+        } */
+
+        /* Attribute '$' selector */
+        [class$="active"] {
+            background-color: blue;
+            /*=> class ismi active ile biten etiketleri etkiler. Class isminin bütün bir kelime olması gerekmez*/
+        }
+
+    </style>
+</head>
+<body>
+
+    <span class="text active">text</span>
+
+    <nav>
+        <a href="" target="_blank">home</a>
+        <a href="" class="active">about</a>
+        <a href="" class="link">contact</a>
+    </nav>
+
+</body>
+</html>

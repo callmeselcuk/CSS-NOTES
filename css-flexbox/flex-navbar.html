@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(30, 42, 94, 1);
+            padding: 0 20px;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            align-self: center;
+            padding: 10px;
+        }
+        .navigation{
+            display: flex;
+            list-style: none;
+        }
+        .navigation a{
+            display: block;
+            padding: 20px;
+            transition: .5s;
+        }
+        .navigation a:hover:not(.icon-link){
+            background-color: #6EACDA;
+            color: #F9E400;
+        }
+        .navigation li:last-child{
+            display: none;
+        }
+
+        @media(max-width:600px) {
+            nav{
+                flex-direction: column;
+                position: relative;
+            }
+            nav a { 
+                align-self: flex-start;
+            }
+            .navigation{
+                flex-direction: column;
+            }
+            .navigation a{
+                padding: 10px;
+            }
+            .responsive .navigation a{
+                border-top:1px solid rgba(226, 226, 182, 0.7);
+                border-bottom:1px solid rgba(226, 226, 182, 0.5);
+                text-align: center;
+                padding: 10px;
+            } 
+            .navigation li:last-child{
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 10px;
+            }
+            .navigation li:last-child a{
+                border: none;
+            }
+            .navigation li:not(:last-child){
+                display: none;
+            }
+            .responsive .navigation li{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="main_nav">
+        <a href="#">Logo</a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="icon-link" onclick="displayMenu()">
+                <i class="fa fa-bars"></i>
+            </a></li>
+        </ul>
+    </nav>
+    <script>
+        function displayMenu() {
+            var link = document.getElementById("main_nav");
+            link.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>

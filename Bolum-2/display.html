@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 75px;
+            display: inline-block;
+        }
+        #first{background-color: red;}
+        #second{background-color: blue;}
+        #third{background-color: green;}
+        a{
+            background-color: yellow;
+            width: 100%;
+            height: 100px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        inline: genişlik veya yükseklik verilmez. sadece iççerik kadar yer kaplar. Ö) <a>,<span>
+        block: her zaman yeni bir satırdan başlar ve kullanabildiği kadar genişlik kullanır. ö) <div>, <section>
+        inline-block: genişlik ve yükseklik verilebilir. Bu özelliği block kısmından alır. Lakin genişlik veya yükseklik verilmediği zaman inline element gibi davranır.
+    -->
+    <div id="container">
+        <div class="box" id="first">first</div>
+        <div class="box" id="second">second</div>
+        <div class="box" id="third">third</div>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Contact</a>
+    </nav>
+</body>
+</html>

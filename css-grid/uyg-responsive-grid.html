@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .content, .sidebar, .footer, .box-2, .box-3{
+            border: 1px solid #ccc;
+            padding: 20px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        .container{
+           display: grid;
+           gap: 25px;
+           grid-template-areas:
+            "header header header"
+            "sidebar content content"
+            "sidebar . . "
+            "box2 box2 box2"
+            "box-3 box-3 footer"
+           ; 
+        }
+        .header{
+            grid-area: header;
+            background-color: antiquewhite;
+        }
+        .content{
+            grid-area: content;
+            background-color: aqua;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: brown;
+        }
+        .box-2{
+            grid-area: box2;
+            background-color: cornflowerblue;
+        }
+        .box-3{
+            grid-area: box-3;
+            background-color: darkgreen;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: #9932cc;
+        }
+        @media(max-width:900px){
+            .container{
+                grid-template-areas: 
+                "header header"
+                "sidebar content"
+                "box2 box-3"
+                "footer footer"
+                ;
+                gap: 15px;
+            }
+        }
+
+        @media(max-width:768px){
+            .container{
+                grid-template-areas: 
+                "header"
+                "content"
+                "sidebar"
+                "box2"
+                "box-3"
+                "footer"
+                ;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="content">
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia? Unde ipsa beatae nulla quidem quae. Tempore aliquid sint, cumque, quas, error quam explicabo natus accusamus voluptas laudantium quae iste.</p>
+        </div>
+        <div class="sidebar">
+            <h3>Lorem, ipsum dolor.</h3>
+            <ul>
+                <li>List 1</li>
+                <li>List 2</li>
+                <li>List 3</li>
+            </ul>
+        </div>
+        <div class="box-2">
+            <h4>Box-2</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse animi fugiat dolore rem incidunt, minima pariatur ipsa sint ad dolores illo numquam sit vel et officiis sequi laudantium ullam quasi.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse animi fugiat dolore rem incidunt, minima pariatur ipsa sint ad dolores illo numquam sit vel et officiis sequi laudantium ullam quasi.
+            </p>
+            </div>
+        <div class="box-3">
+            <h4>Box-3</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse animi fugiat dolore rem incidunt, minima pariatur ipsa sint ad dolores illo numquam sit vel et officiis sequi laudantium ullam quasi.
+            </p>
+        </div>
+        <div class="footer">
+            <p>All right reserved &copy 2024</p>
+        </div>
+    </div>
+</body>
+</html>

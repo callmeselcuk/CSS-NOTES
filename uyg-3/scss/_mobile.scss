@@ -1,0 +1,428 @@
+@use 'variables';
+
+
+//l
+
+@media (min-width: 769px) and (max-width:1200px) {
+    .lead{
+        font-size: 1rem;
+    }
+
+    .books-grid{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+    .card{
+        margin: auto;
+    }
+    
+
+    #main-footer{
+        .footer-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            .col-1{
+                display: none;
+            }
+            .col-2{
+                padding: 1rem 0rem;
+                ul{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 1rem;
+                    li{
+
+                        &:hover{
+                            transform: none;
+                        }
+                    }
+                }
+            }
+            .col-3{
+                li{
+                    padding: 0;
+                }
+            }
+            .col-4{
+                .form_email{
+                    width: 100%;
+                    padding: .5rem;
+                    margin-bottom: .5rem;
+                }
+                .form_button{
+                    width: 100%;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            } 
+            .col-5{
+                text-align: center;
+            }
+            
+        }
+    }
+
+    #back-to-top{
+        a{
+            position: fixed;
+            bottom: 0;
+            right: 30px;
+            font-size: 2rem;
+            color: #7AB2D3; 
+            z-index: 8;
+            transition: all .5s;
+            &:hover{
+                transform: translateY(-8px);
+            }
+        }
+      
+    } 
+}
+
+
+//m
+
+@media (max-width:768px){
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+
+    .lead{
+        font-size: 1.2rem;
+    }
+
+    .books-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        width: 14rem;
+        margin: auto;
+        a{
+            width: 13rem !important;
+        } 
+    }
+    .section-title{
+        width: 90%;
+        margin: auto;
+    }
+
+    .main-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__logo{
+            width: 100px;
+            height: 100px;
+        }
+        &__form{
+            margin-bottom: 1rem;
+            input{
+                width: 200px;
+                padding: 8px 15px;
+                &[type=text]:focus{
+                    width: 250px;
+                }
+            }
+        }
+        &__items{
+            li{
+                margin: 0 20px;
+            }
+        }
+       
+    }
+
+    #header{
+        &__home,
+        &__inner
+        {
+            background-image: none;
+            background-color: variables.$primary-color;
+            height: 38vh;
+
+            .header-content{
+                display: none;
+            }
+            .main-nav{
+                padding-top:0;
+            }
+        }
+    }
+
+    #home{
+        &__a{
+            .about{
+                grid-template-columns: 1fr;
+
+                &__right{
+                    margin-left: 0;
+                    padding-top: 1rem;
+                    text-align: center; 
+                } 
+            }
+           
+        }
+        %__b{
+            p{
+                text-align: center;
+            }
+        }
+    }
+    
+    #main-footer{
+        .footer-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            .col-1{
+                display: none;
+            }
+            .col-2{
+                padding: 1rem 0rem;
+                ul{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 1rem;
+                    li{
+
+                        &:hover{
+                            transform: none;
+                        }
+                    }
+                }
+            }
+            .col-3{
+                li{
+                    padding: 0;
+                }
+            }
+            .col-4{
+                .form_email{
+                    width: 100%;
+                    padding: .5rem;
+                    margin-bottom: .5rem;
+                }
+                .form_button{
+                    width: 100%;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            } 
+            .col-5{
+                text-align: center;
+            }
+            
+        }
+    }
+
+}
+
+
+// s
+@media (max-width: 576px) { 
+
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+
+    .lead{
+        font-size: 1rem;
+    }
+
+   
+    .books-grid{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .card{
+        width: 20rem;
+        margin: auto;
+        a{
+            width: 19rem !important;
+        }
+    }
+    .section-title{
+        width: 90%;
+        margin: auto;
+    }
+
+    .main-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__logo{
+            width: 100px;
+            height: 100px;
+        }
+        &__form{
+            margin-bottom: 1rem;
+            input{
+                width: 200px;
+                padding: 8px 15px;
+                &[type=text]:focus{
+                    width: 250px;
+                }
+            }
+        }
+        &__items{
+            li{
+                margin: 0 20px;
+            }
+        }
+       
+    }
+
+    #header{
+        &__home,
+        &__inner
+        {
+            background-image: none;
+            background-color: variables.$primary-color;
+            height: 38vh;
+
+            .header-content{
+                display: none;
+            }
+            .main-nav{
+                padding-top:0;
+            }
+        }
+    }
+
+    #home{
+        &__a{
+            .about{
+                grid-template-columns: 1fr;
+
+                &__right{
+                    margin-left: 0;
+                    padding-top: 1rem;
+                    text-align: center; 
+                } 
+            }
+           
+        }
+        %__b{
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    #store{
+
+        &-b{
+            padding-top: 0;
+        }
+        
+    }
+
+    #contact{
+        &__form{
+            .inner_form{
+                width: 90%;
+                margin: 1rem auto;
+                grid-template-areas: 
+                'name'
+                'sur'
+                'phone'
+                'email'
+                'text-area'
+                'button';
+            }
+          
+        }
+    }
+
+
+
+    #main-footer{
+        .footer-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            .col-1{
+                display: none;
+            }
+            .col-2{
+                padding: 1rem 0rem;
+                ul{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 1rem;
+                    li{
+
+                        &:hover{
+                            transform: none;
+                        }
+                    }
+                }
+            }
+            .col-3{
+                li{
+                    padding: 0;
+                }
+            }
+            .col-4{
+                .form_email{
+                    width: 100%;
+                    padding: .5rem;
+                    margin-bottom: .5rem;
+                }
+                .form_button{
+                    width: 100%;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            } 
+            .col-5{
+                text-align: center;
+            }
+            
+        }
+    }
+
+    #back-to-top{
+        a{
+            position: fixed;
+            bottom: 0;
+            right: 30px;
+            font-size: 2rem;
+            color: #7AB2D3; 
+            z-index: 8;
+            transition: all .5s;
+            &:hover{
+                transform: translateY(-8px);
+            }
+        }
+      
+    } 
+}
+
+
+
+
+
+

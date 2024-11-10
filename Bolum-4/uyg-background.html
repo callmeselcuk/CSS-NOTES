@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }   
+
+        .box{
+            height: 100vh;
+            background: url(bg-wp.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed;
+            
+        }
+        .img-1{
+            background-image:
+                linear-gradient(to bottom right, rgba(30,30,30,0.3), rgba(35,35,35,0.3)),
+                url(bg-wp.jpg);  
+        }
+        .img-2{
+            background-image:
+                linear-gradient(to bottom right, rgba(30,30,30,0.3), rgba(35,35,35,0.3)),
+                url(bg.jpg);  
+                height: 50vh;
+            }
+        .header{
+            background-color: black;
+            color: aliceblue;
+            padding: 8px;
+            font-size: 48px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 1px;
+        }
+        .break{
+            padding: 50px 100px;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }   
+        .break h4{
+            color: gray;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-1 box">
+        <h1 class="header">Lorem, ipsum</h1>
+    </div>
+    <div class="break">
+        <h4 class="p_head">Lorem, ipsum.</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis mollitia officiis aliquid amet, minima quidem consectetur eaque modi, dolores nemo reprehenderit blanditiis repellendus minus similique odit voluptate libero odio. Eveniet.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis mollitia officiis aliquid amet, minima quidem consectetur eaque modi, dolores nemo reprehenderit blanditiis repellendus minus similique odit voluptate libero odio. Eveniet.</p>
+    </div>
+    <div class="img-2 box">
+        <h1 class="header">Lorem, ipsum</h1>
+    </div>
+    <div class="break">
+        <h4 class="p_head">Lorem, ipsum.</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis mollitia officiis aliquid amet, minima quidem consectetur eaque modi, dolores nemo reprehenderit blanditiis repellendus minus similique odit voluptate libero odio. Eveniet.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis mollitia officiis aliquid amet, minima quidem consectetur eaque modi, dolores nemo reprehenderit blanditiis repellendus minus similique odit voluptate libero odio. Eveniet.</p>
+    </div>
+</body>
+</html>

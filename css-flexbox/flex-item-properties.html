@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blue;
+            display: flex;
+            height: 500px;
+        }
+        .item{
+            background-color: orange;
+            margin: 20px;
+            padding: 30px;
+            font-size: 25px;
+            flex-grow: 0;
+            /* flex: 0 0   250px; */
+            /*property sırası : grow - shrink - basis */
+        }
+        .item-1{
+            order: 2;/* nesnelerin gösteriliş sırasını ayarlarız*/
+            flex: 25%; /* yüzdesel olarak satrının yüzde 25 ini kaplar.*/
+            /*flex-grow: 2;*/  /*flex-grow: nesnelerin orantısal olarak yer kaplamasını sağlar.*/
+        }
+
+        .item-2{
+            order: 3;
+            flex: 25%;
+
+            /* flex-basis: 250px; */
+            /* flex-shrink: 1; default değeri 1 dir. verdiğimiz flex basis özelliği nesne 200 px yer kaplamasını sağlar. lakin tarayıcı daraldığında 200 px'lin altına düşer. 0 yaptığımızda düşmez  */
+            /* flex-shrink: 0; */
+        }
+
+        .item-3{
+            flex: 50%;
+            /* flex-grow: 1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+    </div>
+</body>
+</html>

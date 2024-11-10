@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 62.5%; /*10 px e karşılık gelir. Kullanıcı kendi tarayıcısının font büyüklüğünü değiştirdiğinde sayfada da değişir aksi takdirde yani rem ile değer verdeydik değişmeyecekti*/
+        }
+        body{
+            font-size: 1.6rem; /*burda da sayfanın font-size büyüklğünü 16 px yapıyoruz*/
+        }
+
+
+        @media (min-width: 576px) { 
+            html{
+                font-size: 12px;
+            }
+            .kutu-1 h1{
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (min-width: 768px) { 
+            html{
+                font-size: 14px;
+            }
+            .kutu-1 h1{
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (min-width: 992px) { 
+            html{
+                font-size: 16px;
+            }
+            .kutu-1 h1{
+                font-size: 1.8rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="kutu-1">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deleniti unde sunt quibusdam obcaecati modi distinctio ipsa animi! Eius necessitatibus tempora, neque voluptates nulla adipisci odio omnis magnam eaque veniam.</p>
+    </div>
+    <br>
+    <div class="kutu-2">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deleniti unde sunt quibusdam obcaecati modi distinctio ipsa animi! Eius necessitatibus tempora, neque voluptates nulla adipisci odio omnis magnam eaque veniam.</p>
+    </div>
+</body>
+</html>

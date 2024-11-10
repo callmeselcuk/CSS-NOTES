@@ -1,0 +1,397 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:wght@400;700&display=swap');
+@import url("../../Bölüm-3/button.css");
+@import url("base.css");
+
+main{
+    min-height: calc(100vh - 138px);
+}
+/*main-header start*/
+.main-header{
+    background-color: #FC997C;
+    padding: .8rem 1.6rem;
+    position: sticky;
+    top:0;
+    width: 100%;
+    z-index: 1;
+}
+.main-nav{
+    display: inline-block;
+    width: calc(100% - 12rem);
+    text-align: right;
+}
+.main-nav__items{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.main-nav__item{
+    list-style: none;
+    display: inline-block;
+}
+#main-header__logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    border-bottom: 2px solid #2E4C6D;
+    font-weight: 700;
+}
+#main-header__logo span{
+    color: #2E4C6D;
+    font-style: italic;
+}
+.main-nav__item--login a::before{
+    content: none;
+}
+.main-nav__item:last-child{
+    display: none;
+}
+@media (max-width:768px) {
+    .main-nav__item{
+        display: none;
+    }
+    .main-nav__item:last-child {
+        display: block;
+    }
+    .responsive .main-nav__item {
+        display: block;
+        text-align: left;
+        margin: 0.5rem 0;
+    }
+    .responsive .main-nav__item:last-child {
+        position: absolute;
+        right: 40px;
+        top: 6px;
+    }
+    .responsive .main-nav{
+        display: block;
+        text-align: left;
+        margin-top: 1rem;
+    }
+}
+.main-nav__item a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/*main-header end*/
+
+
+/* showcase start */
+#showcase { 
+    background-position: center;
+    height: 40vh;
+    color: #fff;
+    position: relative;
+    background-image: 
+    linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
+    url(../../Bölüm-2/sinema3.jpg);
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#showcase .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(46, 76, 109, 0.3);
+    padding: 2rem;
+    width: 60%;
+    border-radius: 10px;
+}
+#showcase_header{
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+#showcase_text{
+    margin-top: 20px;
+}
+@media (min-width: 576px) { 
+    #showcase{
+        height: 50vh;
+    }
+}
+
+@media (min-width: 768px) { 
+    #showcase {
+        height: 60vh;
+    }
+ }
+
+@media (min-width: 992px) { 
+    #showcase {
+        height: 70vh;
+    }
+ }
+/* showcase end */
+/*how it works start*/
+#how-it-works{
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    font-size: 1.5rem;
+    height: 60vh;
+    background-color: #DFD3C3;
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+.how-it-works__p{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+#how-it-works__main-header{
+    margin: 2.5rem 0px;
+}
+.icon-box h3 {
+    color: #3e4555;
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+.icon-box{
+    font-size: 1rem;
+    padding: 8px;
+}
+.icon-box i {
+    color: #FC997C;
+}
+
+/*how it works end*/
+/*features start*/
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#features{
+    width: 100%;
+}
+.features__left{
+    background:
+    linear-gradient(to bottom, rgba(252, 153, 124, 0.2),rgba(250, 81, 30, 0.2)),
+    url(../../Bölüm-2/watch-movies-together-online.jpg);
+    float: left;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.features__right{
+    display: inline-block;
+    background-color: #D1E9F6;
+    height: 30rem;
+    vertical-align: top;
+    padding: 3.5rem;
+}
+.features__right-head{
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+.features__right-p{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-top:.5rem ;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 1rem;
+}
+@media (min-width:768px) {
+    .features__left,
+    .features__right{
+        width: 50%;
+    }
+}
+/*features end*/
+/*plans start*/
+.section-title {
+    text-align: center;
+    margin: 3rem auto;
+    color: #3e4555;
+    font-size: 2rem;
+}
+
+.plan {           
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;    
+}
+
+.plan__badge {
+    background: #fff;
+    color: #FC997C;
+    padding: 8px;
+    border-radius: 5px;
+}
+@media (min-width:768px) {
+    .plan--featured {
+        position: relative;
+        top: -20px;
+    }
+}
+.recommended_plan {
+    color: #fff;
+    background: #396EB0!important;
+}
+
+.inner-plan {
+    background: #edf5f7;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    transition: all .6s;
+}
+
+.inner-plan:hover {
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.5);
+    top: -5px;
+}
+
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.plan__features li {
+    margin: 6px 0;
+}
+
+/*plans end*/
+
+/*scroll-top start*/
+.scroll-top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin: 8px;
+    color: rgba(46, 76, 109, 1);
+    transition: all .1s;
+    cursor: pointer;
+}
+.scroll-top:hover{
+    bottom: 3px;
+    opacity: 0.8;
+}
+/*scroll-top end*/
+/* stats start */
+#stats{
+    background-image: linear-gradient(0deg, rgba(195,104,34,1) 0%, rgba(253,45,45,1) 100%);
+    height: 20vh;
+    text-align: center;
+    color: #D1E9F6;
+    cursor: pointer;
+    padding: 3rem;
+}
+.stats_item{
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all .5s;
+
+}
+.stats_item:hover{
+    color: #2E4C6D;
+    font-size: 22px;
+}
+/* stats end */
+/*moives start*/
+#movies{
+    margin-top: 25px;
+}
+.card{
+    /* width: 350px; */
+    border-radius: 50px;
+    transition: all .6s;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+@media(min-width:768px) {
+    .card {
+        margin-bottom: 0;
+    }
+    .card:hover{
+        transform: translateY(-10px);    
+    }
+    .inner-card{
+        margin: 0px 15px;
+    }
+    .card-img{
+        height: 300px;
+    }
+}
+
+
+.card:hover .card-body{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.card-img{
+    width: 100%;    
+    height: 250px;
+    background-position: center top;
+    background-size: cover;
+}
+.card-body{ 
+    padding: 25px;
+    background-color: #edf5f7;
+}
+.card-header{
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+.card-text{
+    margin-bottom: 10px;
+}
+
+/*moives end*/
+/*footer start*/
+.footer{
+    background-color: #396EB0;
+    height: 120px;
+}
+footer ul,
+footer li{
+    display: inline-block;
+}
+footer li{
+    padding-left: 8px;
+}
+footer a{
+    color: #fff;
+    transition: all .5s;
+}
+footer a:hover{
+    color: #FC997C;
+}
+#footer_socials{
+    text-align: right;
+}
+#footer_nav{
+    font-size: 20px;
+    position: relative;
+}
+#footer_nav a {
+    position: relative;
+}
+#footer_nav a::before{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #FC997C;
+    content: "";
+    transition: .5s;
+}
+#footer_nav a:hover::before{
+    width: 100%;
+}
+#footer_container{
+    padding-top: 60px;
+}
+/*footer end*/

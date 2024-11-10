@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>   
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        #showcase { 
+            background: url(sinema3.jpg);
+            background-position: center;
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+       
+        #how-it-works { 
+            color: black;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+        .how-it-works__p{
+            color: #758694;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+        .main-header{
+            background-color: #FC997C;
+            padding: 8px 16px;
+        }
+        .main-nav{
+            display: inline-block;
+            width: calc(100% - 109px);
+            text-align: right;
+        }
+        .main-nav__items{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+        .main-nav__item{
+            list-style: none;
+            display: inline-block;
+        }
+        #main-header__logo{
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-bottom: 2px solid #2E4C6D;
+        }
+        #main-header__logo span{
+            color: #2E4C6D;
+            font-style: italic;
+        }
+        .main-nav__item a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 12px;
+        }
+        .main-nav__item a::before{
+            content: '\2022';
+            margin-right: 5px;
+        }
+
+        .main-nav__item--login a{
+            background-color: #2E4C6D;
+            border: 3px solid #fff;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+
+        .main-nav__item--login a:hover{
+            color: #2E4C6D;
+            background-color: #fff;
+            border: 3px solid #2E4C6D;
+
+        }
+        .main-nav__item--login a::before{
+            content: none;
+        }
+        .main-nav__item a:hover {
+            color: #2E4C6D;
+        }
+
+        .main-nav__item a:active{
+            color: palegreen;
+        }
+        .how-it-works__container{
+            width: 100%;
+        }
+        #how-it-works__main-header{
+            margin: 40px 0px;
+        }
+        .how-it-works__container .box{
+            width: 30%;
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 8px;
+        }
+        .how-it-works__container .box p{
+            color: #758694;
+            font-size: 18px;
+        }
+       .how-it-works__container .box i{
+        color: #FC997C;
+       }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="#" id="main-header__logo">Movie<span>App</span></a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Filmler</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Diziler</a>
+                </li>
+                <li class="main-nav__item main-nav__item--login">
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+   <main>
+       <section id="showcase">
+            <h1>Welcome to MovieApp</h1>
+       </section>
+       <section id="how-it-works">
+            <div id="how-it-works__main-header">
+                <h2>How it works?</h2>
+                <p class="how-it-works__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem distinctio facilis fugiat ipsam adipisci!</p>
+            </div>
+            
+            <div class="how-it-works__container">
+                <div class="box">
+                    <i class="fa-regular fa-registered fa-2x"></i>
+                    <h3>Register</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laboriosam voluptatem eos voluptas ducimus natus.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-regular fa-lightbulb fa-2x"></i>
+                    <h3>Choose a Plan</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laboriosam voluptatem eos voluptas ducimus natus.</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-clapperboard fa-2x"></i>
+                    <h3>Enjoy Movify</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laboriosam voluptatem eos voluptas ducimus natus.</p>
+                </div>
+            </div>
+
+       </section>
+   </main>
+
+
+   
+</body>
+</html>

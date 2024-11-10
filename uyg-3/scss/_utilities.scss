@@ -1,0 +1,171 @@
+@use 'variables';
+
+.container{
+    max-width: variables.$max-width;
+    padding: 0 1.4rem;
+    margin: auto;
+}
+
+// buttons
+%btn-shared{
+    display: inline-block;
+    padding: .7rem 2rem;
+    transition: all .5s;
+    border: none;
+    cursor: pointer;
+} 
+
+.btn {
+    &-primary {
+        @extend %btn-shared;
+        color: variables.$white-color;
+        background-color: variables.$primary-color;
+    }
+    &-light {
+        @extend %btn-shared;
+        color: variables.$dark-color;
+        background-color: variables.$third-color;
+    }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+    opacity: 0.8 !important;
+}
+
+
+// background
+
+.bg{
+    &-primary {
+        background-color: variables.$primary-color;
+    }
+    
+    &-light {
+        background-color: variables.$third-color;
+    }
+    &-discount{
+        background-color: variables.$pink-color;
+    }
+    &-new{
+        background-color: variables.$blue-color;
+    }
+    &-seller{
+        background-color: variables.$green-color;
+    }
+}
+
+// padding
+
+.py{
+    &-1{
+        padding: 1rem 0;
+    }
+    &-2{
+        padding: 2rem 0;
+    }
+    &-3{
+        padding: 3rem 0;
+    }
+    &-4{
+        padding: 4rem 0;
+    }
+}
+
+// margin
+.my{ 
+    &-1{
+        margin: 1rem 0;
+    }
+    &-2{
+        margin: 2rem 0;
+    }
+    &-3{
+        margin: 3rem 0;
+    }
+    &-4{
+        margin: 4rem 0;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.section-title{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lead{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    word-spacing: 2px;
+}
+
+.border-bottom{
+    height: 3px;
+    width: 5rem;
+    background-color: variables.$primary-color;
+    margin: 0 auto 1rem auto; 
+}
+
+.card{
+    width: 15rem;
+    height: 33rem;
+    padding: .8rem 1rem;
+    background-color: variables.$card-bg;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
+    .card-container{
+        .card-badge{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: .9rem;
+            border-radius: 8px;
+            padding: .5rem .8rem;
+            color: #fff;
+        }
+        img{
+            width: 100%;
+            height: 300px;
+        }
+        h3,h4,p,img{  
+            padding-bottom: .8rem;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: bolder;
+        }
+        a{
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 14rem;
+            text-align: center;
+            display: none; 
+            transition: all .5s;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        .card-container a{
+            display: block;
+           
+        }
+        .card-badge{
+            opacity: 0.8;
+        }
+    }
+}
+.books-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}

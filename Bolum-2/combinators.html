@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div p{
+            background-color: red;
+        } (Descendant Selector )*/
+
+        /* div > p {
+            background-color: red;
+        } (Child Selector) */
+/* 
+        div + p {
+            background-color: red;
+        } (Adjacent Sibling Selector) */
+
+        div ~ p {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Combinators -->
+
+    <!-- 1- Descendant Selector () : divin altındaki bütün p elementleri kırmısız olur (seciton'ın altındaki dahil) -->
+    <!-- 2- Child Selector > : sadece divin altındaki p ler kırzmızı olur. (sectionun altındaki p torun olarak geçer o yüzden o kırmızı olmaz) -->
+    <!-- 3- Adjacent Sibling Selector (+): div etiketinden sonra gelen ilk etiket için uygulanır. (sadece 5. paragraf kırmızı) -->
+     <!-- 4- General Sibling Selector (~) : div etiketinden sonra gelen bütün etiketler için uygulanır (5/6/7 kırmızı)-->
+    <p>1. paragraf.</p>
+    <div>
+        <p>2. paragraf.</p>
+        <p>3. paragraf.</p>
+        <section>
+            <p>4. paragraf.</p>
+        </section>
+    </div>
+    <p>5. paragraf.</p>
+    <p>6. paragraf.</p>
+    <p>7. paragraf.</p>
+</body>
+</html>

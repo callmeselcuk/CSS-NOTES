@@ -1,0 +1,73 @@
+// main-nav
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+
+    &__logo {
+        width: 70px;
+        height: 70px;
+    }
+    &__items{
+        display: flex;
+
+        li{
+            padding: 1rem 1.5rem;
+
+            a{
+                color: $white-color;
+                text-transform: uppercase;
+                border-bottom: 3px transparent solid;
+                padding-bottom:.5rem;
+                transition: border-color .5s;
+            
+                &:hover{
+                    border-color: $medium-color;
+                }
+                &.active{
+                    border-color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+
+#header{
+    &__home{
+        background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+        $bg-image;
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        color: $white-color;
+        user-select:none;
+
+        .header-content{  
+            text-align: center;
+            padding-top: 15%;
+
+        }
+        h1{
+            font-size: 4rem;
+            line-height: 1.2;
+
+        }
+        .typewrite {
+            display: block;
+
+        }
+    }
+    &__inner{
+        background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        $bg-image;
+        background-position: 40% 20%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 8rem;
+        border-bottom: 5px solid $primary-color;
+    }
+}
